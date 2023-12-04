@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="./img/icon.png">
+	<title>Neliz</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<script src="./js/cursortrail.js"></script>
+	<script src="./js/skinview3d.bundle.js"></script>
+	<script type="module">
+		let skinViewer;	
+		
+		skinViewer = new skinview3d.SkinViewer({
+			canvas: document.getElementById("skin_container"),
+			skin: "./img/skin.png",
+			cape: "./img/cape.png",
+			width: 250,
+			height: 250,
+		});
+		  
+		skinViewer.camera.position.set(0.7, 0, 1);
+		skinViewer.animation = new skinview3d.IdleAnimation();
+		skinViewer.zoom = 0.9;		
+	 </script>
+	 <div class="container">
+		  <header>
+				<h1>NELIZ</h1>
+		  </header>
+		  <main>
+				<section>
+					<h2>Welcome</h2>
+					<p>Hey, welcome! My name is Niels. I'm a teenager from The Netherlands interested in minecraft and programming. I also like to listen to music and read in my spare time. Feel free to send me a dm on Discord!</p>	
+					<h2>Socials</h2>
+					<div class="socials">
+						<a href="https://discord.com/users/990552479659884564" target="_blank"><img src="./icon/discord.webp" alt="discord" width="40" height="40"></a>
+						<a href="https://laby.net/@Neliz_" target="_blank"><img src="./icon/laby.webp" alt="laby" width="40" height="40"></a>
+						<a href="https://github.com/n3liz" target="_blank"><img src="./icon/github.webp" alt="github" width="40" height="40"></a>
+						<a href="https://modrinth.com/user/Neliz" target="_blank"><img src="./icon/modrinth.png" alt="modrinth" width="40" height="40"></a>
+					</div>
+				</section>
+				<canvas id="skin_container" width="250" height="250"></canvas>
+		  </main>
+		  <footer>
+				<p>© 2023 Neliz</p>
+		  </footer>
+	 </div>
+</body>
+</html>
