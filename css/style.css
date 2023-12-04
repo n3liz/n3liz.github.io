@@ -1,0 +1,50 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background: #000 url('/img/background.png') no-repeat center center fixed; 
+	background-size: cover;
+}
+
+.container {
+	max-width: 800px;
+	margin: auto;
+	padding: 20px;
+}
+
+header, footer {
+	background: #333;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+main {	
+	background: #333;
+	color: #fff;
+	padding: 20px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-radius: 10px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+	margin-top: 20px;
+}
+
+.socials a img {
+	transition: transform 0.3s ease;
+}
+
+.socials a:hover img {
+	transform: translateY(-5px);
+}
